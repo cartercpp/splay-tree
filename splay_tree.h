@@ -320,6 +320,8 @@ private:
             else
                 m_root = y;
 
+            y->m_parent = x->m_parent;
+            
             x->m_left = y->m_right;
             if (x->m_left)
                 x->m_left->m_parent = x;
